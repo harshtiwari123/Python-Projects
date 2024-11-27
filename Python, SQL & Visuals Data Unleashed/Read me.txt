@@ -1,16 +1,22 @@
-1. Dataset is obtained from Kaggle so user have to create token and give the datacollecter and datset name in code.
+			###########Pokémon Dataset Processing and Visualization###########
 
-		dataset_path = 'itambs/pokemons'
+>>>This project processes a Pokémon dataset, creates a SQLite database, and generates visualizations using Plotly. The code includes two workflows:
 
-2.change path according to user
- ->destination_dir = r'C:\Users\galav\OneDrive\Desktop\Assignment\dataset'  
- ->df = pd.read_csv(r"C:\Users\galav\OneDrive\Desktop\Assignment\dataset\pokedex.csv", sep=';', header=0)
- ->csv_file_path = r"C:\Users\galav\OneDrive\Desktop\Assignment\coverted csv data set\pokedex_data.csv"
- ->db_file_path = r"C:\Users\galav\OneDrive\Desktop\Assignment\data base file\pokedex.db"
- ->fig1.write_html(r'C:\Users\galav\OneDrive\Desktop\Assignment\Graphs\bargraph.html')
- ->fig2.write_html(r'C:\Users\galav\OneDrive\Desktop\Assignment\Graphs\scatter.html')
- ->fig3.write_html(r'C:\Users\galav\OneDrive\Desktop\Assignment\Graphs\line.html')
- ->fig4.write_html(r'C:\Users\galav\OneDrive\Desktop\Assignment\Graphs\histogram.html')
- ->sql_file_path = r'C:\Users\galav\OneDrive\Desktop\Assignment\sql file\create_table_pokedex.sql'
+	1.Without Kaggle Account: Reads a local CSV file, processes data, saves it to a SQLite database, generates SQL 		files, 	and creates visualizations (bar, scatter, line, and histogram).
 
-3.In this project there is a use of sqlite database
+	2.With Kaggle Account: Downloads the dataset using Kaggle API, performs similar processing, and generates outputs.
+
+>>>Features:
+	1.Dynamic Paths: Uses os for directory management and ensures portability.
+	2.Data Processing: Converts datasets, saves to SQLite, and creates SQL scripts.
+	3.Visualization: Generates interactive graphs (bar, scatter, line, histogram) with Plotly.
+	4.Directory Management: Automatically creates required directories for outputs.
+>>>Outputs:
+	1.Cleaned CSV
+	2.SQLite database
+	3.SQL file with table creation and insertion scripts
+	4.Graphs as HTML files
+>>>Requirements:
+	1.Python 3.x
+	2.Libraries: pandas, sqlite3, plotly, os
+	3.Optional: Kaggle API for dataset download
