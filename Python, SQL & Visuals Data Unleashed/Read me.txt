@@ -1,0 +1,16 @@
+1. Dataset is obtained from Kaggle so user have to create token and give the datacollecter and datset name in code.
+
+		dataset_path = 'itambs/pokemons'
+
+2.change path according to user
+ ->destination_dir = r'C:\Users\galav\OneDrive\Desktop\Assignment\dataset'  
+ ->df = pd.read_csv(r"C:\Users\galav\OneDrive\Desktop\Assignment\dataset\pokedex.csv", sep=';', header=0)
+ ->csv_file_path = r"C:\Users\galav\OneDrive\Desktop\Assignment\coverted csv data set\pokedex_data.csv"
+ ->db_file_path = r"C:\Users\galav\OneDrive\Desktop\Assignment\data base file\pokedex.db"
+ ->fig1.write_html(r'C:\Users\galav\OneDrive\Desktop\Assignment\Graphs\bargraph.html')
+ ->fig2.write_html(r'C:\Users\galav\OneDrive\Desktop\Assignment\Graphs\scatter.html')
+ ->fig3.write_html(r'C:\Users\galav\OneDrive\Desktop\Assignment\Graphs\line.html')
+ ->fig4.write_html(r'C:\Users\galav\OneDrive\Desktop\Assignment\Graphs\histogram.html')
+ ->sql_file_path = r'C:\Users\galav\OneDrive\Desktop\Assignment\sql file\create_table_pokedex.sql'
+
+3.In this project there is a use of sqlite database
